@@ -48,14 +48,31 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
+import { SigninComponent } from './signin/signin.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes:Routes=[
+{
+  path:'',component:LoginComponent
+}
+];
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninComponent,
+    LoginComponent,
+    RegisterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   /*  A11yModule,
     ClipboardModule,
     CdkStepperModule,
