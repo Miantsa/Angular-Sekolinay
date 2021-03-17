@@ -54,11 +54,7 @@ import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes:Routes=[
-{
-  path:'',component:LoginComponent
-}
-];
+
 
 @NgModule({
   declarations: [
@@ -72,8 +68,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
-  /*  A11yModule,
+  
+    A11yModule,
     ClipboardModule,
     CdkStepperModule,
     CdkTableModule,
@@ -116,7 +112,7 @@ const appRoutes:Routes=[
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule,*/
+    ScrollingModule,
   ],
  
   providers: [],
