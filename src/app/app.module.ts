@@ -48,7 +48,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
-import { SigninComponent } from './signin/signin.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -59,7 +58,6 @@ import { RouterModule, Routes } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent,
     LoginComponent,
     RegisterComponent,
     SidebarComponent
@@ -68,7 +66,7 @@ import { RouterModule, Routes } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-  
+
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
@@ -114,7 +112,7 @@ import { RouterModule, Routes } from '@angular/router';
     PortalModule,
     ScrollingModule,
   ],
- 
+
   providers: [],
   bootstrap: [AppComponent]
 })
